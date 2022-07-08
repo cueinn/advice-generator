@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  color: #CEE3E9;
+  font-family: 'Mukta', sans-serif;
+  text-align: center;
+  background-color: #202632;
+}
+
+body {
+  height: 100vh;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+
+  max-width: 540px;
+
+  padding: 40px 24px 64px;
+
+  background-color: #313A49;
+  border-radius: 8px;
+  box-shadow: 0 30px 50px -10px #151a24;
+}
+
+.id {
+  margin-bottom: 24px;
+  color: #53FFAB;
+  font-size: 14px;
+  letter-spacing: .25em;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.advice {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.divider {
+  width: 100%;
+}
+  .divider.md {
+    display: none;
+  }
+@media (min-width: 768px) {
+  .divider.sm {display: none}
+  .divider.md {display: block }
+}
+
+button {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  margin-left: -32px;
+
+  width: 64px;
+  height: 64px;
+
+  background: #53FFAB;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow .3s ease-out,
+              transform .3s ease-out;
+}
+  button:hover {
+    box-shadow: 0 0 40px #53ffabb5;
+  }
+  button:active {
+    transform: scale(.8)
+  }
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  font-size: 14px;
+}
+.attribution a {
+  color: #8acadd;
+}

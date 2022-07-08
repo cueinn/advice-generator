@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <p class="id">
+      Advice #<span id="adviceId">9001</span>
+    </p>
+    <h1 class="advice">
+      “
+      <span id="adviceText">The universe has something for you</span>
+      ”
+    </h1>
+    <img src="./images/pattern-divider-mobile.svg" class="divider sm" alt="Divider">
+    <img src="./images/pattern-divider-desktop.svg" class="divider md" alt="Divider">
+    <button id="btnRefresh">
+      <img src="./images/icon-dice.svg" alt="New Advice">
+    </button>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/cueinn">cueinn</a>.
+  </div>
+
+  <script src="./node_modules/axios/dist/axios.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
