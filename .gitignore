@@ -1,7 +1,6 @@
 *.sketch
 *.fig
 design/
-node_modules/
 *.xd
 README-template.md
 
